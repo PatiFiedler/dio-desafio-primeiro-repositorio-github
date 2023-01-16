@@ -1,0 +1,167 @@
+--GIT--
+
+PROMPT DE COMANDO WINDOWS
+janela cmd
+clica na primeira opção
+abre o prompt de comando (do windows)
+
+c:\Users\patri>
+
+dir
+lista os diretórios dentro dessa pasta.
+
+cd /
+vai para c:\
+
+cd windows
+vai para o diretório windows
+c:\windows>
+
+cd..
+volta um
+
+cls
+para limpar a tela
+
+a tecla tab é autocompletar
+
+mkdir 
+cria uma pasta
+
+echo
+printa no terminal o que for escrito
+
+o símbolo > redireciona o fluxo e pode ser usado para criar algo
+exemplo: echo hello > hello.txt (se existir ele printa o 
+texto dentro, se não existir ele cria)
+
+del
+para deletar arquivos, mas não deleta diretórios
+
+o botão seta para cima traz os comandos feitos anteriormente
+
+rmdir  (remove directory)
+deletar diretório
+
+/S 
+
+
+/Q
+
+--------------------------------------------------------
+DENTRO DO GIT BASH
+
+
+CTRL+SHIFT
+copiar
+
+CTRL+SHIFT+Insert
+colar
+
+ls
+listar
+não mostra pastas ocultas
+
+ls -a
+mostra pastas ocultas
+
+cd
+igual do prompt
+
+cd ..
+voltar um nivel
+
+CTRL+l
+limpar a tela
+
+mkdir nome 
+cria um diretório chamado nome
+
+pwd
+mostra o caminho completa de onde estamos
+
+minha senha é as quatro primeiras da senha ultima
+
+git init
+inicializa um repositório dentro da pasta que estamos
+
+git config --global user.email "patriciaff00@gmail.com"
+git config --global user.name "PatiFiedler"
+
+git add nomeArquivo
+coloca o arquivo em staged
+
+git add *
+coloca todos os arquivos em stage
+
+git add .
+coloca todas as modificações em staged
+
+git commit -m "nome"
+guarda o arquivo no nosso repositório local
+
+git status
+mostra como está o status do arquivo
+se está untracked, unmodified, modified, staged
+
+mv nome.md ./receitas
+mover arquivo nome.md para pasta receitas
+
+git config --list
+mostra a lista de todas as configurações do seu git
+tecla Q para sair
+
+git config --global --unset user.email
+para mudar o e-mail nas configurações do git
+vai apagar e depois tem que colocar um novo da mesma 
+forma anterior
+
+cria um repositório no github
+copia o endereço http
+vai no git bash
+e faz
+git remote add origin linkGithub
+
+git remote -v
+lista os repositórios remotos cadastrados
+
+git push origin master
+
+--------------------------------------------------
+MODIFICANDO ARQUIVOS
+
+modifico, salvo
+vou no git
+vejo no git status
+
+git add *
+
+git status para ver
+
+git commit -m "texto explicativo"
+
+git push origin master (ou main)
+
+----------------------------------------------------
+Caso alguém tenha modificado seu arquivo e feito push e 
+o seu ficou diferente do que está lá, ao fazer push vai 
+dar erro 
+aí vc precisa fazer pull do que está no github 
+
+git pull origin master
+ele vai mostrar que tem CONFLIT (content): Merge conflict in nomeArquivo
+
+aí vc abre o arquivo e vê as modificações
+entre <<<<<<< HEAD e ========= são as suas alterações
+abaixo do ======= são alterações de outro usuário
+
+faz as alterações apagando as linhas <<<<< e ======
+salva e faz tudo de novo
+
+-------------------------------------------------------
+COMO BAIXAR UM REPOSITÓRIO
+
+Clica no botão Code
+copia o http
+vai no git
+git clone colaLink
